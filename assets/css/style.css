@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header h1 .seo {
+    color: #d9dcd6;
+}
+
+/* Changed 'div' selector to 'nav' to correctly direct the styling to the correct elements after refactoring the html document to include semantic element conventions. */
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* Changed 'div' selector to 'nav' to correctly direct the styling to the correct elements after refactoring the html document to include semantic element conventions. */
+.header nav ul {
+    list-style-type: none;
+}
+
+/* Changed 'div' selector to 'nav' to correctly direct the styling to the correct elements after refactoring the html document to include semantic element conventions. */
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Changed the class name from 'hero' to 'main-image' to better describe this section of the html element.*/
+.main-image {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* Grouped the separate 'search-enging-optimization', 'online-reputation-management' and 'social-media-marketing' selectors to the new class selector of 'card',  to properly refer to the new class name that was assigned in the html and to better describe the elements semantically. This eliminated the need to repeat code for the three separate elements that were to be styled identically. */
+.card {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* Grouped the separate 'search-enging-optimization img', 'online-reputation-management img' and 'social-media-marketing img' selectors to the new class selector of 'card img',  to properly refer to the new class name that was assigned in the html and to better describe the elements semantically. This eliminated the need to repeat code for the three separate elements that were to be styled identically. */
+.card img {
+    max-height: 200px;
+}
+ 
+/* Removed the class selector as the only h2 heading elements on the page are to be styled the same. With the grouping of several elements into a single class, this eliminated the need to specify the location of the h2 elements. */
+h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Changed the class name from 'float-left' to 'image-left' to better describe the elements identified by the class as images to be floated left .*/
+.image-left {
+    float: left;
+    margin-right: 25px;
+}
+
+/* Changed the class name from 'float-right' to 'image-right' to better describe the elements identified by the class as images to be floated right .*/
+.image-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/* Grouped the separate 'benefits-lead img', 'benefits-brand img' and 'benefits-cost img' selectors to the new class selector of 'argument img', to properly refer to the new class name that was assigned in the html and to better describe the elements semantically. This eliminated the need to repeat code for the three separate elements that were to be styled identically. */
+.argument {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+/* Removed the class selector as the only h3 heading elements on the page are to be styled the same. With the grouping of several elements into a single class, this eliminated the need to specify the location of the h3 elements. */
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Grouped the separate 'benefits-lead img', 'benefits-brand img' and 'benefits-cost img' selectors to the new class selector of 'argument img',  to properly refer to the new class name that was assigned in the html and to better describe the elements semantically. This eliminated the need to repeat code for the three separate elements that were to be styled identically. */
+.argument img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+/* Removed the class selector as the only h4 heading elements on the page are to be styled the same. With the grouping of several elements into a single class, this eliminated the need to specify the location of the h4 elements. */
+h4 {
+    font-size: 20px;
+}
